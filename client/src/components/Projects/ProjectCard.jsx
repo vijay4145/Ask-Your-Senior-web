@@ -9,7 +9,7 @@ export const ProjectCard = ({res}) => {
            <Link target='_blank' to={`projectdetail/${res._id}`} className='max-w-fit shadow-md hover:shadow-lg pb-1 gap-1 rounded-lg'>
         <img src={res.PROJECT_IMAGE_URL} alt="" className='h-52 w-72'/>
         <div className='flex flex-col justify-between mx-2 mt-1 text-lg text-gray-500'>
-            <h5 className='font-semibold'>{res.PROJECT_NAME}</h5>
+            <h5 className='font-semibold text-gray-900'>{res.PROJECT_NAME}</h5>
             <div className='flex flex-wrap gap-2'>
                 {res.TAGS && res.TAGS.length > 0 && res.TAGS.map((ele, i)=>{
                     return <HastTagCards forDisplay={true} hashTag={ele}/>
