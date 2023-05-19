@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux';
 
 export const SearchBox = () => {
     const [value, setValue] = useState(null);
+    const {COLLEGE_NAME} = useSelector((state)=>state.BookSearchSlice);
     useEffect(() => {
         const searchParams = new URLSearchParams(window.location.search);
         const college_param = searchParams.get('college');
         if(college_param)
           setValue(college_param);
+        else if(COLLEGE_NAME)
+            setValue(COLLEGE_NAME);
+
       }, [])
 
   return (
