@@ -90,12 +90,12 @@ export const Profile = () => {
           >
             <UserDetails data={profiledata} />
           </div>
-          <div id="user-link" className="bg-white rounded-lg p-3 ">
+          {/* <div id="user-link" className="bg-white rounded-lg p-3 ">
             <LinksSection data={profiledata} />
-          </div>
+          </div> */}
           <div
             id="user-activity"
-            className="bg-white rounded-lg p-3 md:col-span-2"
+            className="bg-white rounded-lg p-3 md:col-span-3"
           >
             <Activities data={profiledata} />
           </div>

@@ -13,8 +13,8 @@ export const Profile1 = (props) => {
           {props.data.USER_EMAIL.split('@')[0]}
         </h2>
         <div id='button-div' className='flex gap-2 mt-2'>
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded hover:shadow-lg '>Follow</button>
-            <button className='bg-transparent text-blue-700 font-semibold py-2 px-4 border border-blue-500 rounded hover:shadow-lg'>Message</button>
+            {/* <button className='bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded hover:shadow-lg '>Follow</button> */}
+            {/* <button className='bg-transparent text-blue-700 font-semibold py-2 px-4 border border-blue-500 rounded hover:shadow-lg'>Message</button> */}
         </div>
         <br/>
     </section>
