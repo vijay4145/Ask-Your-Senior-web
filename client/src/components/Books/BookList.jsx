@@ -25,7 +25,7 @@ export const BookList = ({college, semester, branch}) => {
   return (
     <>
     {isLoading ? <Lottie animationData={loading_animation} className='h-44 w-44'/>:
-      <div data-aos="zoom-in" className='p-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-2'>
+      <div data-aos="zoom-in" className='p-2 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-2 place-items-center'>
       {response && response.length > 0 && response.map(res=>{
         return <BookCard res={res}/>
       })}
